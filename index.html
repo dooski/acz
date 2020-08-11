@@ -9,64 +9,9 @@
 
     <title>Document</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="animalese/riffwave.js"></script>
-<script src="animalese/Blob.js"></script>
-<script src="animalese/FileSaver.min.js"></script>
-<script src="animalese/animalese.js"></script>
-<script>
-    function dataURItoBlob(dataURI) {
-        // convert base64/URLEncoded data component to raw binary data held in a string
-        var byteString;
-        if (dataURI.split(',')[0].indexOf('base64') >= 0)
-            byteString = atob(dataURI.split(',')[1]);
-        else
-            byteString = unescape(dataURI.split(',')[1]);
-
-        // separate out the mime component
-        var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0]
-
-        // write the bytes of the string to a typed array
-        var ia = new Uint8Array(byteString.length);
-        for (var i = 0; i < byteString.length; i++) {
-            ia[i] = byteString.charCodeAt(i);
-        }
-
-        return new Blob([ia], { type: mimeString });
-    }
-
-    var synth = new Animalese('animalese/animalese.wav', function () {
-    });
-
-    function generateWav(words) {
-        return synth.Animalese(words, true, 1).dataURI
-    }
-
-    function speakingNoise(words) {
-        var audio = new Audio();
-        audio.src = generateWav(words);
-        audio.play();
-    }
-</script>
 
 <body>
-    <audio src="acnl.wav" controls="true" loop="true"></audio>
-    <button id="preview" type="button" onclick="speaking()">Go!</button>
-    <div class="dialog-box" id="one-box">
-        <h2 class="dialog-box__name">Bart</h2>
-        <img id="bart" src="bart/neutral.png">
-        <div class="column">
-            <p id="app"></p>
-            <p id="app2"></p>
-            <p id="app3"></p>
-        </div>
-    </div>
-
-
-
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="js/logic.js"></script>
+    <a href="./public/index.html">Click here</a>
 </body>
-
 
 </html>
