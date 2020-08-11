@@ -32,7 +32,7 @@ function speakingContinued() {
         cursor: ""
     });
     speakingNoise(words2);
-    bart.src = "bart/huh.png"
+    bart.src = "./bart/huh.png"
     typewriter2
         .typeString(words2)
         .start();
@@ -45,7 +45,7 @@ function speakingFinished() {
         cursor: ""
     });
     speakingNoise(words3);
-    bart.src = "bart/sad.png"
+    bart.src = "./bart/sad.png"
     typewriter3
         .typeString(words3)
         .start();
