@@ -38,13 +38,13 @@
     var synth = new Animalese('animalese/animalese.wav', function () {
     });
 
-    function generateWav() {
+    function generateWav(words) {
         return synth.Animalese(words, true, 1).dataURI
     }
 
-    function speakingNoise() {
+    function speakingNoise(words) {
         var audio = new Audio();
-        audio.src = generateWav();
+        audio.src = generateWav(words);
         audio.play();
     }
 </script>
