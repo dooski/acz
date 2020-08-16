@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/turnip.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>ACZ</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 <script src="animalese/riffwave.js"></script>
 <script src="animalese/Blob.js"></script>
 <script src="animalese/FileSaver.min.js"></script>
@@ -50,8 +61,41 @@
 </script>
 
 <body>
-    <audio src="acnl.wav" controls="true" loop="true"></audio>
-    <button id="preview" type="button" onclick="speaking()">Go!</button>
+    <!-- Vertically centered scrollable modal -->
+    <div class="modal fade" tabindex="-1" id="poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">OWNED by Rachelle Toarmino</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>I log on &amp; want to be called<br>
+                        by my name. I rush around<br><br>
+                        like a panic, getting out<br>
+                        of the house. In town, <br><br>
+                        where conversation pays<br>
+                        a price, I’m a fool. Cherry<br><br>
+                        asks me to grow a new turn<br>
+                        of peaches. Her attention <br><br>
+                        makes my world level up.<br>
+                        I know it’s a game when cash<br><br>
+                        shakes down from a tree,<br>
+                        when it lands &amp; makes music.<br><br>
+                        There’s nothing I can’t work<br>
+                        toward. I set the town<br><br>
+                        tune to Runaway. I sit<br>
+                        &amp; lay down. It’s all I can do.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="acnl.wav" id="acnl" loop="true"></audio>
+    <div class="dialog-box">
+        <h1>ANIMAL CROSSING POETRY ZINE</h1>
+    </div>
     <div class="dialog-box" id="one-box">
         <h2 class="dialog-box__name">Bart</h2>
         <img id="bart" src="bart/neutral.png">
@@ -60,8 +104,14 @@
             <p id="app2"></p>
             <p id="app3"></p>
         </div>
+        <div class="row option-group">
+            <button hidden type="button" class="button" id="showPoemButton" data-toggle="modal"
+                data-target="#poem-modal">Show me the
+                poem!</button>
+            <button class="button" id="okButton" type="button" onclick="speaking()">Let's go!</button>
+        </div>
     </div>
-
+    </div>
 
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
