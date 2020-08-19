@@ -61,16 +61,41 @@
 </script>
 
 <body>
-    <!-- Vertically centered scrollable modal -->
-    <div class="modal fade" tabindex="-1" id="poem-modal">
+    <!-- list of poets -->
+    <div class="modal fade" tabindex="-1" id="poet-list-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title">OWNED by Rachelle Toarmino</h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">Choose a poet to check out!</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setWL()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <div class="modal-body">
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- POEM MODALS -->
+    <!-- Rachelle Toarmino -->
+    <div class="modal fade" tabindex="-1" id="rt-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">OWNED by Rachelle Toarmino</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setWL()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
                 <div class="modal-body">
                     <p>I log on &amp; want to be called<br>
                         by my name. I rush around<br><br>
@@ -88,17 +113,378 @@
                         toward. I set the town<br><br>
                         tune to Runaway. I sit<br>
                         &amp; lay down. It’s all I can do.</p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Rachelle is the author of the poetry collection That Ex, out now from Big Lucks.
+                            She is the editor in chief of Peach Mag.</i></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Will LaPorte -->
+    <div class="modal fade" tabindex="-1" id="wl-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">HAIRCUT by Will LaPorte</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setHW()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>You can sit down in a chair<br>
+                        have a wrinkly cowl wrapped around you<br>
+                        and tell her about you.<br><br>
+
+                        Hair falls away, or hair returns<br>
+                        if you hide what your intentions are.<br><br>
+
+                        Hair cascades from you or away<br>
+                        should you confess to your crimes<br>
+                        against cleanliness;<br><br>
+
+                        vanishes<br>
+                        when you live for chaos;<br><br>
+
+                        comes and goes as you heart to heart,<br>
+                        until you wear your truth.
+                    </p>
+                    <!-- END OF POEM -->
+                </div>
+                <br>
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">(DON'T) LEAVE by Will LaPorte</h2>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>When you tell<br>
+                        the pheasant<br>
+                        you’re content to see them go<br><br>
+
+                        and they take that as an invitation<br>
+                        to stay<br>
+                        to try harder to be your friend<br><br>
+
+                        Do you become the heel of your own home?<br><br>
+
+                        When the hamster<br>
+                        says it’s time to go<br>
+                        to return to being a frozen face on the cover<br><br>
+
+                        and you beg him to stay<br><br>
+
+                        and he won’t<br><br>
+
+                        Were you never important enough to him?<br><br>
+
+                        They don’t,<br>
+                        they never felt like numbers.<br>
+                        They always felt like<br>
+                        the people you tolerate<br>
+                        your self-interested friend<br>
+                        the ones you could never make leave<br>
+                        the ones who were never going to stay.
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Will LaPorte (he/him) is a musician, wannabe lyricist, kind of a cartoonist
+                            and evidently trying his hand at poetry. He lives in Kingston, NY and has
+                            a very cute/absolutely possessed by *something* kitty named Domino.
+                            Animal Crossing: New Leaf got him through some particularly rough times,
+                            so now he's here to share the love and pay it forward a bit. P.S. Dan is cute</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harrison Wade -->
+    <div class="modal fade" tabindex="-1" id="hw-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">CALLING A FISH by Harrison Wade</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setBW()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>touch to shake<br>
+                        fruit from the trees, to<br>
+                        pick it out of the bed<br>
+                        of leaves, to take<br>
+                        it back to camp and <br>
+                        make a salad, a tart,<br>
+                        a cake. Have you seen<br>
+                        a wolf blush? The great<br>
+                        coincidence is returning<br>
+                        all at once. Touch to swap<br>
+                        stories, change what was<br>
+                        found for what was brought.<br>
+                        Have you held hands<br>
+                        in passing? <br>
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Harrison writes and lives between Vancouver and Toronto. His poetry has appeared in Hart House
+                            Review, Acta Victoriana, and Half a Grapefruit Magazine.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brian Windschitl -->
+    <div class="modal fade" tabindex="-1" id="bw-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">ATTENTION: TOWNSFOLK by Brian Windschitl</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setAS()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>i just wanted to take the time to say hi.<br>
+                        i will be moving to town soon with nothing in my pockets except 50 bells and all the good
+                        intentions in the world.<br>
+                        i hope we can be good friends who cheer each other on and give each other furniture and make
+                        each other pies. i’ll make you all pies, i promise.<br>
+                        ive heard so much about all of you.<br>
+                        to filbert the squirrel, i cant wait to lay around and watch the clouds with you.<br>
+                        hippo rocco, will you fish with me?<br>
+                        to wart jr., even though you are so grumpy, i’d be happy to go bug catching with you, even
+                        though you might find me slightly smug.<br>
+                        and finally, to isabella, i do it all for you, my favorite talking puppy ever. (don’t tell
+                        bea).<br>
+                        see you all on the island!<br>
+                        much love, brian<br>
+                        p.s.<br>
+                        kk, lets collab<br>
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>brian is a writer living in brooklyn. he is a digital media marketing content creator by day
+                            and meme consumer by night. he is currently attempting to make his own kimchi. brian’s
+                            tweets: @_brnwnd</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amanda Silberling -->
+    <div class="modal fade" tabindex="-1" id="as-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">I FALL ASLEEP TO CHANEL MILLER'S VOICE by Amanda Silberling</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setRTA()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>It’s the morning of Animal Crossing Direct<br>
+                        but I can’t wake up in time. Such simple acts<br>
+                        can feel this way. Last night, I listen to the book<br>
+                        Know My Name by Chanel Miller, set a sleep timer,<br>
+                        let her voice lull me to sleep. I’m desensitized <br>
+                        to this kind of lullaby: the story of Emily Doe, <br>
+                        not that Emily Doe, but each one, emerging<br>
+                        like an apparition, an unexpected villager, <br>
+                        a colonizer. When Chanel says Philadelphia,<br>
+                        I wake up. Everything happens so close <br>
+                        to home. This is my worst habit: <br>
+                        I roll over and check my phone<br>
+                        in the middle of the night. On Twitter,<br>
+                        AOC slays Mystic7, the Pokémon Go Youtuber.<br>
+                        I check to see if there’s anything new<br>
+                        in my Pokémon Home wonder box. I fulfill <br>
+                        requests on Pocket Camp. I’m so good<br>
+                        at fulfilling expectations. Everything will coalesce, <br>
+                        eventually. To make space for the coincidence – <br>
+                        to cross paths with me on Walnut Street,<br>
+                        another Emily Doe, and then another, <br>
+                        and another. To reproduce one Emily Doe <br>
+                        across every island, every console, a character <br>
+                        stripped of herself, who lives in all of us. <br>
+                        We know how to shrink. We know how <br>
+                        the story ends. Zoe texts: OOOO eventually <br>
+                        u get a construction permit and can change <br>
+                        the landscape of your island!!!!! & I imagine <br>
+                        Emily Doe shaping all of us, envy the ability <br>
+                        to cut out these parts of me. I want to write<br>
+                        a poem about Animal Crossing that is not<br>
+                        actually about trauma, about Emily. <br>
+                        How nothing can distract me<br>
+                        the way Isabelle can. How I don’t have <br>
+                        the capacity, too many items in my market box. <br>
+                        How even Tom Nook can’t expand my body,<br>
+                        build extra space for this burden, these burdens. <br>
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Amanda Silberling is a poet, journalist, and multimedia artist whose work has appeared in NPR,
+                            Hyperallergic, The Rumpus, Kotaku, and other places. She directed the documentary “We’re
+                            Here, We’re Present: Women in Punk,” which premiered in 2017 on VICE, and has since screened
+                            at Cineteca Madrid’s Mujeres Hechas de Punk Festival and the Art Attack Gallery in San
+                            Francisco. She was a 2019-2020 Princeton in Asia Fellow in Laos at the Luang Prabang Film
+                            Festival, and she is currently the Van Doren Fellow at the University of Pennsylvania's
+                            Center for Programs in Contemporary Writing. Her favorite villager is Cherry (don't tell
+                            June), and she enjoys wishing on shooting stars with Celeste. Find her at
+                            amandasilberling.com, on twitter at @asilbwrites, or in the park playing Pokémon Go.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rachel Tanner -->
+    <div class="modal fade" tabindex="-1" id="rta-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">OLD HORIZONS by Rachel Tanner</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setAB()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p><b><i>Content warning for domestic violence</i></b></p>
+                    <hr>
+                    <p>He took me to GameStop to get a 3DS XL<br>
+                        and Animal Crossing: New Leaf<br>
+                        on one of his good days. On one of his<br>
+                        apology days. On one of his baby,<br>
+                        you mean everything to me days.<br><br>
+
+                        I played through his rage blackouts. The<br>
+                        bathroom door was the only door in the apartment<br>
+                        that locked so I played on the floor. Kept<br>
+                        an extra charger under the sink.<br><br>
+
+                        I played and I played and I kept playing<br>
+                        but now I’m sort of dreading<br>
+                        the new Animal Crossing game because<br>
+                        what if all it does is remind me of him?<br>
+                        The way he’d hold my neck against the wall<br>
+                        followed by baby I’m so sorry. Followed by<br>
+                        I swear it’ll never happen again.<br><br>
+
+                        It always happened again and I would<br>
+                        always find solace in New Leaf,<br>
+                        a place where no one ever necklaced <br>
+                        their hands around my throat. A place<br>
+                        where safety was manufactured but real. <br><br>
+
+                        It’s been three years and I can still feel his hands.<br>
+                        It’s been three years and I don’t know<br>
+                        if I’m ready for Animal Crossing again.<br>
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Rachel Tanner (she/her) is an Alabamian writer whose work has recently appeared in Tiny
+                            Molecules, Impossible Task, Tenderness Lit, and elsewhere. She tweets @rickit. </i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adrian Belmes -->
+    <div class="modal fade" tabindex="-1" id="ab-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">YOUR FRIENDS NEED YOU THEY ALWAYS NEED YOU THEY WILL NEVER STOP by Adrian
+                        Belmes</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setAB()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p><i>in memory of the suicide i didn't have two summers ago</i></p>
+                    <hr>
+                    <p>isabelle said i’d been gone for weeks.<br><br>
+
+                        in my absence, the town was overgrown.<br>
+                        i spent the afternoon in bed, pulling the weeds,<br>
+                        obsessively transposing flowers <br>
+                        so the cosmos did not interrupt the rows of roses<br>
+                        i had planted by my house last year.<br><br>
+
+                        my favorite lion moved away, but the koalas stayed.<br>
+                        good friends leave, but sometimes that’s okay.<br>
+                        a new cat came to town and built herself a home<br>
+                        a little left of my cherry tree grove<br>
+                        in a spot i’d meant to put a clock tower in.<br>
+                        that transgression, i did not mind so much.<br><br>
+
+                        mom sent me a letter.<br>
+                        peanut asked where i had been.<br>
+                        alice said i’d changed a bit,<br>
+                        i looked a little different from the last time i was here,<br>
+                        in need of a haircut, a change of clothes.<br>
+                        she’s right, it’s been a moment since i’ve been alright,<br>
+                        but bad times are just times that are bad,<br>
+                        and i feel i’m coming to the end of mine. <br><br>
+
+                        i think my friends have missed me.<br>
+                        i think that i will be missed.
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Adrian Belmes is a Jewish Ukrainian poet residing currently in San Diego. He is a senior
+                            editor for Fiction International, editor in chief of Badlung Press, and vice president of
+                            State Zine Collective. He has been previously published in SOFT CARTEL, Philosophical Idiot,
+                            and elsewhere. You can find him at adrianbelmes.com or @adrian_belmes. </i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END POEM MODALS -->
+
+    <!-- begin displayed page -->
     <audio src="acnl.wav" id="acnl" loop="true"></audio>
     <div class="dialog-box">
         <h1>ANIMAL CROSSING POETRY ZINE</h1>
     </div>
     <div class="dialog-box" id="one-box">
-        <h2 class="dialog-box__name">Bart</h2>
-        <img id="bart" src="bart/neutral.png">
+        <h2 class="dialog-box__name" id="name">???</h2>
+        <img hidden id="bart" src="bart/happy.png">
         <div class="column">
             <p id="app"></p>
             <p id="app2"></p>
@@ -106,9 +492,11 @@
         </div>
         <div class="row option-group">
             <button hidden type="button" class="button" id="showPoemButton" data-toggle="modal"
-                data-target="#poem-modal">Show me the
+                data-target="#rt-poem-modal">Show me the
                 poem!</button>
-            <button class="button" id="okButton" type="button" onclick="speaking()">Let's go!</button>
+            <button hidden type="button" class="button" id="showList" data-toggle="modal"
+                data-target="#poet-list-modal">Show me the list of poets!</button>
+            <button hidden class="button" id="okButton" type="button" onclick="speaking()">...</button>
         </div>
     </div>
     </div>
