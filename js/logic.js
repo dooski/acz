@@ -13,6 +13,7 @@ const showPoetList = document.getElementById("showList")
 var open1 = `Hello?`
 var open2 = `Is my mic on?`
 var open3 = `Ah! Here we go...`
+
 //general intro
 var words1 = `Hello, good folks! I'm Bart the Chameleon and I am so happy to see you!`
 var words2 = `My friends and I have thrown together a little poetry collection for you
@@ -21,8 +22,7 @@ var words3 = `We have over 20 poets to share with you, and I'm looking forward t
 such a sensational line up.`
 var words4 = `So, oh worm, here's how it'll work: I'll introduce each of our poets in a curated order and
 then you, dear reader, will get as long as you'd like with their piece; to read, take in, cry a lil bit, repeat.`
-var words5 = `Or, I guess if you don't like the sound of my voice, you could just see a list of all the poets
-and read like that . . . . .`
+var words5 = `Or, I guess if you don't wanna hear my order, you can skip around . . .`
 var words6 = `Anyway! Are we ready to go?`
 
 //Rachelle Toarmino
@@ -51,19 +51,16 @@ var wordsBW = `Lucky number 4, coming at you: it's Brian Windschitl!`
 var words2BW = `"brian is a writer living in brooklyn. 
 he is a digital media marketing content creator by day and meme consumer by night. 
 he is currently attempting to make his own kimchi. brian’s tweets: @_brnwnd"`
-var words3BW = `I tried making kimchi once, but realized I just wanted crickets instead.`
+var words3BW = `I tried making kimchi once, but realized I just wanted crickets instead. Oh worm.`
 
 //Amanda Silberling
 var wordsAS = `Still thinking about crickets... anyway, here's our next poet! Amanda Silberling!`
 var words2AS = `"Amanda Silberling is a poet, journalist, and multimedia artist whose work has 
-appeared in NPR, Hyperallergic, The Rumpus, Kotaku, and other places. She directed the documentary 
-“We’re Here, We’re Present: Women in Punk,” which premiered in 2017 on VICE, and has since screened 
-at Cineteca Madrid’s Mujeres Hechas de Punk Festival and the Art Attack Gallery in San Francisco. 
-She was a 2019-2020 Princeton in Asia Fellow in Laos at the Luang Prabang Film Festival, and she 
-is currently the Van Doren Fellow at the University of Pennsylvania's Center for Programs in 
-Contemporary Writing. Her favorite villager is Cherry (don't tell June), and she enjoys wishing on 
-shooting stars with Celeste. Find her at amandasilberling.com, on twitter at @asilbwrites, or 
-in the park playing Pokémon Go."`
+appeared in NPR, Hyperallergic, The Rumpus, Kotaku, and other places. She was a 2019-2020 Princeton in 
+Asia Fellow in Laos at the Luang Prabang Film Festival, and she is currently the Van Doren Fellow at 
+the University of Pennsylvania's Center for Programs in Contemporary Writing. Her favorite 
+villager is Cherry (don't tell June), and she enjoys wishing on shooting stars with Celeste. 
+Find her at amandasilberling.com, on twitter at @asilbwrites, or in the park playing Pokémon Go."`
 var words3AS = `Pokemon Go to the Polls.`
 
 //Rachel Tanner
@@ -74,7 +71,78 @@ var words3RTA = `Rachel has included a content warning for domestic violence on 
 //Adrian Belmes
 var wordsAB = `Ok, time for Adrian Belmes!`
 var words2AB = `"Adrian Belmes is a Jewish Ukrainian poet residing currently in San Diego. He is a senior editor for Fiction International, editor in chief of Badlung Press, and vice president of State Zine Collective. He has been previously published in SOFT CARTEL, Philosophical Idiot, and elsewhere. You can find him at adrianbelmes.com or @adrian_belmes."`
-var words3AB = `Philosophical Idiot is my title in New Horizons!`
+var words3AB = `Philosophical Idiot is my title in New Horizons, oh worm!`
+
+//Ale Rosales
+var wordsAR = `Next up: Ale Rosales!`
+var words2AR = `"Ale Rosales (she/they) is a leftists mestizx lesbian. She lives in Tijuana/SD 
+with her cat, Suh, whom she adores. She is an editor for Chaparral Press, and has previously 
+published work in The Fruit Tree. You can find her on twitter @sorginale, and you can find her 
+zines at issuu.com/mossmoon."`
+var words3AR = `I wonder if Suh would like Bob?`
+
+//Josefine Stargardt
+var wordsJS = `Woo, we are breezing along! Here's Josefine Stargardt next!`
+var words2JS = `"Josefine Stargardt is a bilingual poet currently based in Germany. She will never forgive herself for deleting her very first Animal Crossing town. Her words can be found in Homology Lit, The Cardiff Review, and elsewhere."`
+var words3JS = `It's a long story but . . . I'm actually banned from Germany.`
+
+//Sarah Robbins
+var wordsSR = `I'd get a glass of water if I could drink. But! I can't! Sarah Robbins Time!`
+var words2SR = `"Sarah Robbins is a  washed-up humanities major who graduated from Missouri Southern State University in May of 2020. You can follow her on Instagram (@tri_saraahtops) and Twitter (@saaraahkate)."`
+var words3SR = `Oh worm! Missouri! I'm also banned from Missouri.`
+
+//Josh Smith
+var wordsJS2 = `Flash round! Josh Smith coming at us with a quickie.`
+var words2JS2 = `"Josh Smith was born in Buffalo, raised in punk, and currently lives inside his own heart. Josh has choreographed fight scenes for two different poetry events, which must be some sort of record."`
+var words3JS2 = `My cousin Flick was also raised in punk, oh worm.`
+
+//Imogen L. Smiley
+var wordsIS = `Oh worm! It's Imogen L. Smiley.`
+var words2IS = `"Imogen. L. Smiley (she/her) is a twenty-two-year-old writer from Essex, UK. She has anxiety,
+depression and a relentless love of dogs. Although poetry isn't her strongest area of
+writing, she does enjoy the ability to neglect the rules of style, and come up with
+convoluted imagery that would otherwise be unconventional and inappropriate in prose."`
+var words3IS = `I always neglect the rules of style by being naked.`
+
+//Rae White
+var wordsRW = `Up next we have Rae White!`
+var words2RW = `"Rae White is a non-binary transgender poet, writer and zinester. Their poetry collection Milk Teeth (UQP) won the 2017 Thomas Shapcott Poetry Prize and was shortlisted for the 2019 Victorian Premier’s Literary Award for Poetry. Rae’s short story 'The Body Remembers' won Second Prize in the 2019 Rachel Funari Prize for Fiction."`
+var words3RW = `This poem was originally published at Subbed In: Ibes House and in Rae's poetry collection Milk Teeth, oh worm.`
+
+//Jeff Schiff
+var wordsJS3 = `Our next two poets wrote poems more about animals crossing than Animal Crossing, but still counts! First up: Jeff Schiff!`
+var words2JS3 = `"Jeff Schiff is author of That hum to go by (MAMMOTH Books), Mixed Diction (MAMMOTH Books),
+Burro Heart (MAMMOTH Books), The Homily of
+Infinitude (Pennsylvania Review Press), and The Rats of Patzcuaro (Poetry Link). His work
+has appeared internationally in more than seventy periodicals, including Grand Street, The
+Ohio Review, and The Southwest Review. He has taught at Columbia College Chicago since 1987."`
+var words3JS3 = `Hm, maybe I should finally get an MFA . . .`
+
+//Noah Falck
+var wordsNF = `Second of the animals crossing: Noah Falck!`
+var words2NF = `"Noah Falck (he/him/his) is the author of Exclusions (Tupelo Press, 2020). He lives in Buffalo, New York. "`
+var words3NF = `Go Bills!`
+
+//Will Hall
+var wordsWH = `Ok! Enter: Will Hall!`
+var words2WH = `"Will Hall (they/them) is a nonbinary creative residing in Philadelphia, PA. As a person with
+Borderline Personality Disorder, much of their work concentrates on finding nuance in a
+world they are predisposed to interpret as “All or Nothing.” Will’s art can be found on
+instagram @whdoodles or on twitter @williamjdhall."`
+var words3WH = `Oh worm, Philly! You think they make cheesesteaks with crickets there?`
+
+//Rachel Small
+var wordsRS = `Our next poet is Rachel Small! I didn't mean for it to rhyme with Will Hall!`
+var words2RS = `"Rachel Small is a poet who is working on her bio :)"`
+var words3RS = `Seriously, I didn't mean for it to rhyme.`
+
+//Iona Murphy
+var wordsIM = `Iona Murphy is here! (In spirit!)`
+var words2IM = `"Iona Murphy (she/her) is a student and spends most of her time engrossed in the works of
+Sylvia Plath. She describes her writing as 'straddling the fine line between poetry and
+oversharing.' She has writing published with Black Bough, Teen Belle, and Brave Voices. 
+You can keep up with her on Twitter: @write_with_Iona and Instagram: ionasmurfy"`
+var words3IM = `. . . is "oh worm" getting old?`
 
 setTimeout(open, 1)
 //cold open
@@ -204,7 +272,7 @@ function speakingFinished2() {
     typewriter3
         .typeString(words6)
         .start();
-    setAS();
+    setJS();
 }
 
 //Rachelle Toarmino
@@ -533,7 +601,7 @@ function speakingAB() {
 function speakingContinuedAB() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2AB) - 6,
+        delay: lengthGuess(words2AB) - 4,
         cursor: ""
     });
     speakingNoise(words2AB);
@@ -553,6 +621,556 @@ function speakingFinishedAB() {
     bart.src = "./bart/happy.png"
     typewriter3
         .typeString(words3AB)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Ale Rosales
+function setAR() {
+    showPoemButton.setAttribute("data-target", "#ar-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingAR()
+}
+function speakingAR() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsAR),
+        cursor: ""
+    });
+    speakingNoise(wordsAR);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsAR)
+        .start();
+    setTimeout(speakingContinuedAR, 4000)
+}
+function speakingContinuedAR() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2AR) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2AR);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2AR)
+        .start();
+    setTimeout(speakingFinishedAR, 12000)
+}
+function speakingFinishedAR() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3AR),
+        cursor: ""
+    });
+    speakingNoise(words3AR);
+    bart.src = "./bart/huh.png"
+    typewriter3
+        .typeString(words3AR)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Josefine Stargardt
+function setJS() {
+    showPoemButton.setAttribute("data-target", "#js-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingJS()
+}
+function speakingJS() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsJS),
+        cursor: ""
+    });
+    speakingNoise(wordsJS);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsJS)
+        .start();
+    setTimeout(speakingContinuedJS, 4000)
+}
+function speakingContinuedJS() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2JS) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2JS);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2JS)
+        .start();
+    setTimeout(speakingFinishedJS, 10000)
+}
+function speakingFinishedJS() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3JS),
+        cursor: ""
+    });
+    speakingNoise(words3JS);
+    bart.src = "./bart/sad.png"
+    typewriter3
+        .typeString(words3JS)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Sarah Robbins
+function setSR() {
+    showPoemButton.setAttribute("data-target", "#sr-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingSR()
+}
+function speakingSR() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsSR),
+        cursor: ""
+    });
+    speakingNoise(wordsSR);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsSR)
+        .start();
+    setTimeout(speakingContinuedSR, 4000)
+}
+function speakingContinuedSR() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2SR) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2SR);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2SR)
+        .start();
+    setTimeout(speakingFinishedSR, 8000)
+}
+function speakingFinishedSR() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3SR),
+        cursor: ""
+    });
+    speakingNoise(words3SR);
+    bart.src = "./bart/sad.png"
+    typewriter3
+        .typeString(words3SR)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Josh Smith
+function setJS2() {
+    showPoemButton.setAttribute("data-target", "#js2-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingJS2()
+}
+function speakingJS2() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsJS2),
+        cursor: ""
+    });
+    speakingNoise(wordsJS2);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsJS2)
+        .start();
+    setTimeout(speakingContinuedJS2, 4000)
+}
+function speakingContinuedJS2() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2JS2) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2JS2);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2JS2)
+        .start();
+    setTimeout(speakingFinishedJS2, 9000)
+}
+function speakingFinishedJS2() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3JS2),
+        cursor: ""
+    });
+    speakingNoise(words3JS2);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3JS2)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Imogen Smiley
+function setIS() {
+    showPoemButton.setAttribute("data-target", "#is-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingIS()
+}
+function speakingIS() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsIS),
+        cursor: ""
+    });
+    speakingNoise(wordsIS);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsIS)
+        .start();
+    setTimeout(speakingContinuedIS, 4000)
+}
+function speakingContinuedIS() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2IS) - 7,
+        cursor: ""
+    });
+    speakingNoise(words2IS);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2IS)
+        .start();
+    setTimeout(speakingFinishedIS, 12000)
+}
+function speakingFinishedIS() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3IS),
+        cursor: ""
+    });
+    speakingNoise(words3IS);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3IS)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Rae White
+function setRW() {
+    showPoemButton.setAttribute("data-target", "#rw-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingRW()
+}
+function speakingRW() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsRW),
+        cursor: ""
+    });
+    speakingNoise(wordsRW);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsRW)
+        .start();
+    setTimeout(speakingContinuedRW, 4000)
+}
+function speakingContinuedRW() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2RW) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2RW);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2RW)
+        .start();
+    setTimeout(speakingFinishedRW, 11000)
+}
+function speakingFinishedRW() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3RW),
+        cursor: ""
+    });
+    speakingNoise(words3RW);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3RW)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Jeff Schiff
+function setJS3() {
+    showPoemButton.setAttribute("data-target", "#js3-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingJS3()
+}
+function speakingJS3() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsJS3),
+        cursor: ""
+    });
+    speakingNoise(wordsJS3);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsJS3)
+        .start();
+    setTimeout(speakingContinuedJS3, 5000)
+}
+function speakingContinuedJS3() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2JS3) - 6,
+        cursor: ""
+    });
+    speakingNoise(words2JS3);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2JS3)
+        .start();
+    setTimeout(speakingFinishedJS3, 14000)
+}
+function speakingFinishedJS3() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3JS3),
+        cursor: ""
+    });
+    speakingNoise(words3JS3);
+    bart.src = "./bart/huh.png"
+    typewriter3
+        .typeString(words3JS3)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Noah Falck
+function setNF() {
+    showPoemButton.setAttribute("data-target", "#nf-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingNF()
+}
+function speakingNF() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsNF),
+        cursor: ""
+    });
+    speakingNoise(wordsNF);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsNF)
+        .start();
+    setTimeout(speakingContinuedNF, 4000)
+}
+function speakingContinuedNF() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2NF) - 5,
+        cursor: ""
+    });
+    speakingNoise(words2NF);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2NF)
+        .start();
+    setTimeout(speakingFinishedNF, 6000)
+}
+function speakingFinishedNF() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3NF),
+        cursor: ""
+    });
+    speakingNoise(words3NF);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3NF)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Will Hall
+function setWH() {
+    showPoemButton.setAttribute("data-target", "#wh-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingWH()
+}
+function speakingWH() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsWH),
+        cursor: ""
+    });
+    speakingNoise(wordsWH);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsWH)
+        .start();
+    setTimeout(speakingContinuedWH, 4000)
+}
+function speakingContinuedWH() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2WH) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2WH);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2WH)
+        .start();
+    setTimeout(speakingFinishedWH, 8000)
+}
+function speakingFinishedWH() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3WH),
+        cursor: ""
+    });
+    speakingNoise(words3WH);
+    bart.src = "./bart/huh.png"
+    typewriter3
+        .typeString(words3WH)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Rachel Small
+function setRS() {
+    showPoemButton.setAttribute("data-target", "#rs-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingRS()
+}
+function speakingRS() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsRS),
+        cursor: ""
+    });
+    speakingNoise(wordsRS);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsRS)
+        .start();
+    setTimeout(speakingContinuedRS, 6000)
+}
+function speakingContinuedRS() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2RS) - 6,
+        cursor: ""
+    });
+    speakingNoise(words2RS);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2RS)
+        .start();
+    setTimeout(speakingFinishedRS, 7000)
+}
+function speakingFinishedRS() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3RS),
+        cursor: ""
+    });
+    speakingNoise(words3RS);
+    bart.src = "./bart/sad.png"
+    typewriter3
+        .typeString(words3RS)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+}
+
+//Iona Murphy
+function setIM() {
+    showPoemButton.setAttribute("data-target", "#im-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingIM()
+}
+function speakingIM() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsIM),
+        cursor: ""
+    });
+    speakingNoise(wordsIM);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsIM)
+        .start();
+    setTimeout(speakingContinuedIM, 4000)
+}
+function speakingContinuedIM() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2IM) - 3,
+        cursor: ""
+    });
+    speakingNoise(words2IM);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2IM)
+        .start();
+    setTimeout(speakingFinishedIM, 11000)
+}
+function speakingFinishedIM() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3IM),
+        cursor: ""
+    });
+    speakingNoise(words3IM);
+    bart.src = "./bart/sad.png"
+    typewriter3
+        .typeString(words3IM)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
 }
