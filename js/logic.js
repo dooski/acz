@@ -272,7 +272,7 @@ function speakingFinished2() {
     typewriter3
         .typeString(words6)
         .start();
-    setJS();
+    setRT()
 }
 
 //Rachelle Toarmino
