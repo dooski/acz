@@ -26,6 +26,7 @@
 <script src="animalese/FileSaver.min.js"></script>
 <script src="animalese/animalese.js"></script>
 <script>
+    // Animalese.js set up
     function dataURItoBlob(dataURI) {
         // convert base64/URLEncoded data component to raw binary data held in a string
         var byteString;
@@ -73,11 +74,113 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-6">
-
-                    </div>
-                    <div class="col-6">
-
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setRT()">
+                                    Rachelle Toarmino
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setWL()">
+                                    Will LaPorte
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setHW()">
+                                    Harrison Wade
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setBW()">
+                                    Brian Windschitl
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setAS()">
+                                    Amanda Silberling
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setRTA()">
+                                    Rachel Tanner
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setBB()">
+                                    Brendon Bigley
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setAB()">
+                                    Adrian Belmes
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setAR()">
+                                    Ale Rosales
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setJS()">
+                                    Josefine Stargardt
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setSR()">
+                                    Sarah Robbins
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setJS2()">
+                                    Josh Smith
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setIS()">
+                                    Imogen Smiley
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setRW()">
+                                    Rae White
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setJS3()">
+                                    Jeff Schiff
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setNF()">
+                                    Noah Falck
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setWH()">
+                                    Will Hall
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setRS()">
+                                    Rachel Small
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setIM()">
+                                    Iona Murphy
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setMF()">
+                                    Mike Fracentese
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setKG()">
+                                    Kara Goughnour
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setTB()">
+                                    Toby Buckley
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setJJ()">
+                                    Jenna Jaco
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setMM()">
+                                    Miss Macross
+                                </button>
+                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
+                                    onclick="setCMo()">
+                                    Casey Morris
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,7 +343,8 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Harrison writes and lives between Vancouver and Toronto. His poetry has appeared in Hart House
+                    <p><i>Harrison writes and lives between Vancouver and Toronto. His poetry has appeared in Hart
+                            House
                             Review, Acta Victoriana, and Half a Grapefruit Magazine.</i></p>
                 </div>
             </div>
@@ -282,7 +386,8 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>brian is a writer living in brooklyn. he is a digital media marketing content creator by day
+                    <p><i>brian is a writer living in brooklyn. he is a digital media marketing content creator by
+                            day
                             and meme consumer by night. he is currently attempting to make his own kimchi. brian’s
                             tweets: @_brnwnd</i></p>
                 </div>
@@ -347,15 +452,19 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Amanda Silberling is a poet, journalist, and multimedia artist whose work has appeared in NPR,
+                    <p><i>Amanda Silberling is a poet, journalist, and multimedia artist whose work has appeared in
+                            NPR,
                             Hyperallergic, The Rumpus, Kotaku, and other places. She directed the documentary “We’re
-                            Here, We’re Present: Women in Punk,” which premiered in 2017 on VICE, and has since screened
+                            Here, We’re Present: Women in Punk,” which premiered in 2017 on VICE, and has since
+                            screened
                             at Cineteca Madrid’s Mujeres Hechas de Punk Festival and the Art Attack Gallery in San
-                            Francisco. She was a 2019-2020 Princeton in Asia Fellow in Laos at the Luang Prabang Film
+                            Francisco. She was a 2019-2020 Princeton in Asia Fellow in Laos at the Luang Prabang
+                            Film
                             Festival, and she is currently the Van Doren Fellow at the University of Pennsylvania's
                             Center for Programs in Contemporary Writing. Her favorite villager is Cherry (don't tell
                             June), and she enjoys wishing on shooting stars with Celeste. Find her at
-                            amandasilberling.com, on twitter at @asilbwrites, or in the park playing Pokémon Go.</i></p>
+                            amandasilberling.com, on twitter at @asilbwrites, or in the park playing Pokémon Go.</i>
+                    </p>
                 </div>
             </div>
         </div>
@@ -368,7 +477,7 @@
                 <div class="modal-header">
                     <!-- POEM TITLE by poet -->
                     <h2 class="modal-title">OLD HORIZONS by Rachel Tanner</h2>
-                    <button type="button" class="close" data-dismiss="modal" onclick="setAB()" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" onclick="setBB()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -418,13 +527,102 @@
         </div>
     </div>
 
+    <!-- Brendon Bigley -->
+    <div class="modal fade" tabindex="-1" id="bb-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">OLD LEAF by Brendon Bigley</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setAB()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>Do you know how many towns I've seen?<br>
+                        Sparsely decorated beachfront chalets,<br>
+                        nestled amidst dense suburban bustling communities.<br>
+                        Thatched roof construction overlooking beds of marigold and rose thorns,<br>
+                        never seen so much as a pinprick in all my years somehow.<br>
+                        Do you ever wonder why that is?<br><br>
+
+                        It's that calming kind of presence I know of Autumn,<br>
+                        witnessing the end of something lovely before it plunges into night.<br>
+                        I find myself visiting these places often,<br>
+                        and fondly reminiscing about the other places that I've been.<br>
+                        Villages I've left to fend against the whims of time,<br>
+                        like trying to remember the face of a friend from long ago. <br>
+                        It's an approximation of what came before...<br>
+                        just more weeds now, I suppose. <br><br>
+
+                        So what does it mean when a time capsule ages?<br>
+                        As years pass, is there a serenity in knowing what's possible?<br>
+                        I hope my friends forgive me when I visit somewhere new. <br>
+                        Just like my friends before,<br>
+                        and before,<br>
+                        and before.
+
+                    </p>
+                    <!-- END OF POEM -->
+                </div>
+                <br>
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">PURSUIT by Brendon Bigley</h2>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>O spiral eyes!<br>
+                        I feel them burning,<br>
+                        fixated on a number floating just above the surface.<br>
+                        I watch your legs trudge a hundred miles worth of inch-long shores,<br>
+                        as if a million shells will be the answer.<br><br>
+
+                        And when you turn them in<br>
+                        to line the inside of your pockets<br>
+                        with an even higher figure than before,<br>
+                        will you still say yes when asked<br>
+                        if you'd like another wing?<br><br>
+
+                        I bet you will.<br><br>
+
+                        O spiral eyes,<br>
+                        step onto my welcome mat,<br>
+                        or that of anyone in this burg,<br>
+                        and behold a one-room palace<br>
+                        in the shadow of your monolith.<br><br>
+
+                        Because while your home splits upwards,<br>
+                        a mountain amongst knolls,<br>
+                        we all wonder what it is you really want.<br>
+                        And if it's not a place to rest your head,<br>
+                        then what?
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Brendon Bigley (He / Him) is a person who never logged off. When he’s not working at
+                            Marvel,
+                            he’s making podcasts or ambient music. He wonders if it’s legal to marry an Animal
+                            Crossing
+                            New Leaf cartridge. Might be weird. Who knows?</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Adrian Belmes -->
     <div class="modal fade" tabindex="-1" id="ab-poem-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <!-- POEM TITLE by poet -->
-                    <h2 class="modal-title">YOUR FRIENDS NEED YOU THEY ALWAYS NEED YOU THEY WILL NEVER STOP by Adrian
+                    <h2 class="modal-title">YOUR FRIENDS NEED YOU THEY ALWAYS NEED YOU THEY WILL NEVER STOP by
+                        Adrian
                         Belmes</h2>
                     <button type="button" class="close" data-dismiss="modal" onclick="setAR()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -468,8 +666,10 @@
                     <br>
                     <!-- POET BIO -->
                     <p><i>Adrian Belmes is a Jewish Ukrainian poet residing currently in San Diego. He is a senior
-                            editor for Fiction International, editor in chief of Badlung Press, and vice president of
-                            State Zine Collective. He has been previously published in SOFT CARTEL, Philosophical Idiot,
+                            editor for Fiction International, editor in chief of Badlung Press, and vice president
+                            of
+                            State Zine Collective. He has been previously published in SOFT CARTEL, Philosophical
+                            Idiot,
                             and elsewhere. You can find him at adrianbelmes.com or @adrian_belmes. </i></p>
                 </div>
             </div>
@@ -496,7 +696,8 @@
                         And even though I had to play with the noise off, <br>
                         I heard your voice in my head and it sounded sweet and so very very soft!<br>
                         I loved your house! <br>
-                        You hung around mine! You never asked to be roommates (unlike the funny rabbit) but I wish you
+                        You hung around mine! You never asked to be roommates (unlike the funny rabbit) but I wish
+                        you
                         had and that I could have said yes! <br>
                         Your hard exterior hid the gentlest programming!<br>
                         You showed me how to be kind again.<br>
@@ -509,9 +710,11 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Ale Rosales (she/they) is a leftists mestizx lesbian. She lives in Tijuana/SD with her cat,
+                    <p><i>Ale Rosales (she/they) is a leftists mestizx lesbian. She lives in Tijuana/SD with her
+                            cat,
                             Suh, whom she
-                            adores. She is an editor for Chaparral Press, and has previously published work in The Fruit
+                            adores. She is an editor for Chaparral Press, and has previously published work in The
+                            Fruit
                             Tree. You can find her on twitter @sorginale, and you can find her zines at
                             issuu.com/mossmoon. </i></p>
                 </div>
@@ -580,7 +783,8 @@
                     <br>
                     <!-- POET BIO -->
                     <p><i>Josefine Stargardt is a bilingual poet currently based in Germany. She will never forgive
-                            herself for deleting her very first Animal Crossing town. Her words can be found in Homology
+                            herself for deleting her very first Animal Crossing town. Her words can be found in
+                            Homology
                             Lit, The Cardiff Review, and elsewhere. </i></p>
                 </div>
             </div>
@@ -651,8 +855,10 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Josh Smith was born in Buffalo, raised in punk, and currently lives inside his own heart. Josh
-                            has choreographed fight scenes for two different poetry events, which must be some sort of
+                    <p><i>Josh Smith was born in Buffalo, raised in punk, and currently lives inside his own heart.
+                            Josh
+                            has choreographed fight scenes for two different poetry events, which must be some sort
+                            of
                             record.</i></p>
                 </div>
             </div>
@@ -757,10 +963,12 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Imogen. L. Smiley (she/her) is a twenty-two-year-old writer from Essex, UK. She has anxiety,
+                    <p><i>Imogen. L. Smiley (she/her) is a twenty-two-year-old writer from Essex, UK. She has
+                            anxiety,
                             depression and a relentless love of dogs. Although poetry isn't her strongest area of
                             writing, she does enjoy the ability to neglect the rules of style, and come up with
-                            convoluted imagery that would otherwise be unconventional and inappropriate in prose.</i>
+                            convoluted imagery that would otherwise be unconventional and inappropriate in
+                            prose.</i>
                     </p>
                 </div>
             </div>
@@ -818,7 +1026,8 @@
                         for eating. I use the toe of my pumps to nudge <br>
                         the cat back with a slosh.
                         <hr>
-                    <p><b>NOTE:</b><i>Originally published at Subbed In: Ibis House and in Rae's poetry collection Milk
+                    <p><b>NOTE:</b><i>Originally published at Subbed In: Ibis House and in Rae's poetry collection
+                            Milk
                             Teeth</i>></p>
                     </p>
                     <!-- END OF POEM -->
@@ -827,7 +1036,8 @@
                     <br>
                     <!-- POET BIO -->
                     <p><i>Rae White (they/them) is a non-binary transgender poet, writer and zinester. Their poetry
-                            collection Milk Teeth (UQP) won the 2017 Thomas Shapcott Poetry Prize and was shortlisted
+                            collection Milk Teeth (UQP) won the 2017 Thomas Shapcott Poetry Prize and was
+                            shortlisted
                             for the 2019 Victorian Premier’s Literary Award for Poetry. Rae’s short story 'The Body
                             Remembers' won Second Prize in the 2019 Rachel Funari Prize for Fiction.</i>
                     </p>
@@ -904,11 +1114,14 @@
                     <!-- POET BIO -->
                     <p><i>Jeff Schiff is author of That hum to go by (MAMMOTH Books), Mixed Diction (MAMMOTH Books),
                             Burro Heart (MAMMOTH Books), Anywhere in this Country (Mammoth Press), The Homily of
-                            Infinitude (Pennsylvania Review Press), and The Rats of Patzcuaro (Poetry Link). His work
-                            has appeared internationally in more than seventy periodicals, including Grand Street, The
+                            Infinitude (Pennsylvania Review Press), and The Rats of Patzcuaro (Poetry Link). His
+                            work
+                            has appeared internationally in more than seventy periodicals, including Grand Street,
+                            The
                             Ohio Review, Poet & Critic, The Louisville Review, Tendril, Pembroke Magazine, Carolina
                             Review, Chicago Review, Hawaii Review, Southern Humanities Review, River City, Indiana
-                            Review, and The Southwest Review. He has taught at Columbia College Chicago since 1987.</i>
+                            Review, and The Southwest Review. He has taught at Columbia College Chicago since
+                            1987.</i>
                     </p>
                 </div>
             </div>
@@ -954,7 +1167,8 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Noah Falck (he/him/his) is the author of Exclusions (Tupelo Press, 2020). He lives in Buffalo,
+                    <p><i>Noah Falck (he/him/his) is the author of Exclusions (Tupelo Press, 2020). He lives in
+                            Buffalo,
                             New York. </i>
                     </p>
                 </div>
@@ -1015,7 +1229,8 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Will Hall (they/them) is a nonbinary creative residing in Philadelphia, PA. As a person with
+                    <p><i>Will Hall (they/them) is a nonbinary creative residing in Philadelphia, PA. As a person
+                            with
                             Borderline Personality Disorder, much of their work concentrates on finding nuance in a
                             world they are predisposed to interpret as “All or Nothing.” Will’s art can be found on
                             instagram @whdoodles or on twitter @williamjdhall. </i>
@@ -1065,7 +1280,11 @@
                     <hr>
                     <br>
                     <!-- POET BIO -->
-                    <p><i>Rachel Small is a poet who is working on her bio :)</i>
+                    <p><i>Rachel Small (she/her) writes outside of Ottawa. Her work has appeared or is forthcoming
+                            in
+                            magazines, including Thorn Literary Magazine, blood orange, The Shore, The Daily Drunk,
+                            Anti-Heroin Chic Magazine, and other places. You can find her on twitter
+                            @rahel_taller.</i>
                     </p>
                 </div>
             </div>
@@ -1079,7 +1298,7 @@
                 <div class="modal-header">
                     <!-- POEM TITLE by poet -->
                     <h2 class="modal-title">TWENTY-FIRST by Iona Murphy</h2>
-                    <button type="button" class="close" data-dismiss="modal" onclick="setIM()" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" onclick="setMF()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -1096,10 +1315,418 @@
                     <!-- POET BIO -->
                     <p><i>Iona Murphy (she/her) is a student and spends most of her time engrossed in the works of
                             Sylvia Plath. She describes her writing as 'straddling the fine line between poetry and
-                            oversharing.' She has writing published with Black Bough, Teen Belle, 3 Moon, Re-Side, The
+                            oversharing.' She has writing published with Black Bough, Teen Belle, 3 Moon, Re-Side,
+                            The
                             Fruit Tree, Fevers of the Mind, Forty-Two Books, The New Southern Fugatives, Ayaskala,
-                            Ang(st) Zine, and Brave Voices. You can keep up with her on Twitter: @write_with_Iona and
+                            Ang(st) Zine, and Brave Voices. You can keep up with her on Twitter: @write_with_Iona
+                            and
                             Instagram: ionasmurfy</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mike Fracentese -->
+    <div class="modal fade" tabindex="-1" id="mf-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">SOCIAL SIMULATION by Mike Fracentese</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setKG()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>BWe can take in & take on this town together,<br>
+                        watch the weather, see the seasons change.<br>
+                        We can run through the rain & after <br>
+                        we can pick the new flowers<br>
+                        & wear them in our hair.<br><br>
+
+                        We can make friends with our neighbors<br>
+                        & make their old furniture our new furniture<br>
+                        & rearrange our rooms for hours <br>
+                        & rearrange our bodies in our rooms,<br>
+                        our favorite songs on repeat.<br><br>
+
+                        Every week we can seek music that wants to be free<br>
+                        & hide from debts that want to be paid.<br><br>
+
+                        If there are roaches in our rooms, we can kill them<br>
+                        or let them live, if you want.<br>
+                        If our friends move away, or when,<br>
+                        we can write them letters<br>
+                        & they’ll always write back.<br><br>
+
+                        We can do all of this<br>
+                        & we can never die.<br><br>
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Mike Fracentese (he/him) is a poet from & in Brooklyn who runs the Flight Recorder Reading
+                            Series out of a black box theater in Manhattan. All of his Animal Crossing town names
+                            have
+                            ended in -vale.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kara Goughnour -->
+    <div class="modal fade" tabindex="-1" id="kg-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">WITH LOVE FROM MOM by Kara Goughnour</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setTB()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p><i>Fiery colors begin their yearly conquest of the hills, <br>
+                            propelled by the autumn winds. Fall is the artist. <br>
+                            Love, Mom</i><br><br>
+
+                        It is three in the morning and I am a wisp of a thing, <br>
+                        my heart hung outside a museum in Philadelphia<br>
+                        where my mother last looked sane with love. <br>
+                        My mother speaks in chances, mostly in those <br>
+                        she didn’t have, that she wants me to take for her.<br>
+                        My mother lies, blue-silly-string strung out <br>
+                        over ceiling fan, laced over her apron and zirconia studs,<br>
+                        and I rub my thumbs over my GameCube controller,<br>
+                        a wishing lamp with just enough magic left <br>
+                        to pour me into a pixelated place where living and loving are fair.<br>
+                        In another home, I plant gardens of cosmos<br>
+                        instead of the cucumbers we pickle all Saturday<br>
+                        to place on frozen, food-bank burgers.<br>
+                        In another home, another mother writes me love letters<br>
+                        from a night where the light isn’t blue. <br>
+                        On the drive home from the trip my mother saved<br>
+                        eight months of tips for, she glistens with sweat, <br>
+                        itches her arms in pace with turn signals. <br>
+                        I watch leaves blur in the colors of a home-cooked meal<br>
+                        and, at the stoplight, my mother turns to me and cups my face, says<br>
+                        <i>We came to the city of our leaders because I want you to become one.<br>
+                            You, unlike me, will get to be you.</i> <br><br>
+
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Kara Goughnour (she/they) is a writer living in Pittsburgh, Pennsylvania. They are the
+                            author
+                            of "Mixed Tapes," a part of the Ghost City Press Summer 2019 Micro-Chap Series, and have
+                            work published or forthcoming in over fifty journals. Follow them on Twitter and
+                            Instagram
+                            @kara_goughnour or read their collected and exclusive works at karagoughnour.com. </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toby Buckley -->
+    <div class="modal fade" tabindex="-1" id="tb-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">GAY FOR MOLEMAN by Toby Buckley</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setJJ()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>You getting home at 5.30PM, <br>
+                        hanging your miner’s helmet <br>
+                        and pickaxe on the coat rack, <br>
+                        sweaty from a day of breaking <br>
+                        rocks and scolding punks. I help <br>
+                        you with your dungarees, <br>
+                        opening first the button at your <br>
+                        left nipple, your right, reading <br>
+                        your body like an erotic novel. <br>
+                        Your shirt is sticking to you, and <br>
+                        your sleek brown coat is puffed <br>
+                        and dulled with the dust. They <br>
+                        do not understand you like I do, <br>
+                        and you don’t understand them, <br>
+                        take their carelessness <br>
+                        personally. It’s because they hate <br>
+                        me – no – they don’t listen to a <br>
+                        word I say, think I’m a joke. I <br>
+                        can’t do it anymore – so don’t. <br>
+                        We lie on the checkered duvet <br>
+                        of our Modern Bed to sleep. <br>
+                        No doubt, he dreams of a future <br>
+                        with autosave functions and a <br>
+                        million-bell retirement plan. <br>
+                        I dream of seeing him from the <br>
+                        waist down.
+
+                    </p>
+                    <!-- END OF POEM -->
+                </div>
+                <br>
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">I COULDN'T AFFORD K.K.'S STOOL IN POCKET CAMP by Toby Buckley</h2>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>Of course I regret it, now that the option is gone, <br>
+                        but I just couldn’t justify buying enough leaf <br>
+                        tickets to keep K.K. and I thought the longing <br>
+                        would have died down by now. Story of my life: <br>
+                        Dogs are expensive, and I can’t have one, and I <br>
+                        can’t be trusted to care for them properly anyway. <br>
+                        I have this fantasy right now where I’m in my <br>
+                        thirties and have a house with a yard and a way <br>
+                        more reliable income, and live with my partner <br>
+                        and a dog called Matthew. Matthew will be large <br>
+                        or medium-sized, and will probably have darker <br>
+                        hair, probably black, and maybe I’ll have a car. <br>
+                        I have a hat with K.K.’s face on, not in real life <br>
+                        but in the game, put it on campers if they’re nice.
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Toby Buckley is a poet and editor for Bombinate Zine.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jenna Jaco -->
+    <div class="modal fade" tabindex="-1" id="jj-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">DEFINITIONS OF BURY by Jenna Jaco</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setMM()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>to hide something underneath something else. of course<br><br>
+
+                        to pat the ground on the head, gently, like it’s your old dog<br><br>
+
+                        to begin a secret handshake<br><br>
+
+                        to stow your neighbor’s memories<br><br>
+
+                        to PRANK!<br><br>
+
+                        to mark with a star made of dirt<br><br>
+
+                        to summon flowers<br><br>
+
+                        to keep safe
+
+
+                    </p>
+                    <!-- END OF POEM -->
+                </div>
+                <br>
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">SHAMPOODLE by Jenna Jaco</h2>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>Yeah sure fuck it<br>
+                        make my hair<br>
+                        the color of angel<br>
+                        wings, for today<br>
+                        I am a minor god<br>
+                        with 15 peaches in my<br>
+                        pocket and clothes<br>
+                        from a balloon.<br>
+                        If I can live a fable <br>
+                        while paying a <br>
+                        mortgage in bags<br>
+                        tied with ribbon<br>
+                        then there is hope <br>
+                        for a bad hairdo, or<br>
+                        a lost time capsule,<br>
+                        or my twelfth rusty<br>
+                        river can, or that HOE<br>
+                        who moved into<br>
+                        the middle of my<br>
+                        BAMBOO GROVE.<br>
+                        The moral of this<br>
+                        rom com, and it is<br>
+                        a rom com, is everything<br>
+                        is already okay.
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <div class="modal-header">
+                        <!-- POEM TITLE by poet -->
+                        <h2 class="modal-title">SO YE CAUGHT A RUSTY CAN IN THE RIVER: by Jenna Jaco</h2>
+                    </div>
+                    <!-- POEM -->
+                    <div class="modal-body">
+                        <p>Oh-ho, we've all been there!<br>
+                            I know, it stings, and not just<br>
+                            from that tetanus slice on yer <br>
+                            dewy little sphere of a palm. <br>
+                            But do ye give up cheffin’ after <br>
+                            one burnt pan of asparagus?<br>
+                            Do ye quit Christmas because<br>
+                            yer aunt gives ye three bottles of <br>
+                            weird lotion? Get back out there, lad!<br>
+                            Cast that line again! Let the<br>
+                            current take it all the way<br>
+                            to the predetermined limit<br>
+                            and see! what! comes! Look,<br>
+                            sometimes you shake a tree<br>
+                            and it's bees. Sometimes you<br>
+                            take a walk and it's hole. But <br>
+                            sometimes, young buck, you get<br>
+                            THE A R O W A N A.
+
+                        </p>
+                        <!-- END OF POEM -->
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Jenna is a technical writer from Texas. She hopes to like fishing and landscaping in real
+                            life
+                            someday.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Miss Macross -->
+    <div class="modal fade" tabindex="-1" id="mm-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">K.K. LAMENT by Miss Macross</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="setCMo()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>See the golden moon outside my kitchen door.<br>
+                        It’s full and so am I, but the day isn’t over yet.<br><br>
+
+                        Not at all. I pull on my shoes, walk out the door,<br>
+                        lift my arms, dive into the cold. <br><br>
+
+                        Allow myself a single, long-ass yawn.<br>
+                        But the day isn’t over yet, and I’m feeling sappier than usual.<br><br>
+
+                        I walk across the street to the video store,<br>
+                        one of few remaining in the Cyberpunk Future.<br>
+                        Tell the owner, who’s been behind that register since 1978,<br>
+                        that I’m not looking for a movie today.<br><br>
+
+                        Walk out with a pastel pink DS Lite<br>
+                        and Animal Crossing: Wild World.<br>
+                        Think about how almost ten years ago<br>
+                        to the day, I was in bed at mom’s house,<br>
+                        playing this same game at 3 a.m.<br>
+                        when my rhinestone-studded Tracfone lit up.<br><br>
+
+                        It was a car accident:<br>
+                        speeding, drinking, dark country roads.<br><br>
+
+                        We didn’t even talk all that much,<br>
+                        but I still look up at the same moon<br>
+                        that looked down on them that night<br>
+                        and I wish they were here<br>
+                        to build their homes<br>
+                        and befriend their neighbors<br>
+                        and plant their flowers, too.
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>miss macross (she/her) is a Pittsburgh-based writer who enjoys watching mecha and taking
+                            naps.
+                            Her first chapbook, MISS MACROSS VS. BATMAN, was published by Dark Particle/CWP
+                            Collective
+                            Press in 2018. Find her on Twitter @missmacross. </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Casey Morris -->
+    <div class="modal fade" tabindex="-1" id="cmo-poem-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- POEM TITLE by poet -->
+                    <h2 class="modal-title">STALE CUPCAKES by Casey Morris</h2>
+                    <button type="button" class="close" data-dismiss="modal" onclick="speakingDone()"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- POEM -->
+                <div class="modal-body">
+                    <p>there’s a new patch of lilies<br>
+                        where your house once was<br><br>
+
+                        did you try to say goodbye?<br>
+                        you probably wrote a letter<br>
+                        but i let my mailbox overflow<br>
+                        and now it’s too late<br><br>
+
+                        i guess i thought you would always <br>
+                        be there for me<br>
+                        so i missed my change to fight<br>
+                        for you to stay<br><br>
+
+                        but it’s okay<br>
+                        i’m happy you’re<br>
+                        being there for you<br><br>
+
+                        wherever you are
+
+                    </p>
+                    <!-- END OF POEM -->
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- POET BIO -->
+                    <p><i>Casey Morris (she/her) is a playwright and marketing manager who works throughout the
+                            Hudson
+                            Valley. Her work has been performed at Dusklit Interactive Arts Festival and
+                            CelebrateWomxn845’s annual gallery showcases.</i>
                     </p>
                 </div>
             </div>
@@ -1109,8 +1736,11 @@
 
     <!-- begin displayed page -->
     <audio src="acnl.wav" id="acnl" loop="true"></audio>
-    <div class="dialog-box">
-        <h1>ANIMAL CROSSING POETRY ZINE</h1>
+    <div class="dialog-box title-box">
+        <h2>
+            <p><i>Pretty Cool Poetry Thing's</i></p>
+        </h2>
+        <h1>ANIMAL CROSSING ZINE</h1>
     </div>
     <div class="dialog-box" id="one-box">
         <h2 class="dialog-box__name" id="name">???</h2>
@@ -1121,11 +1751,11 @@
             <p id="app3"></p>
         </div>
         <div class="row option-group">
-            <button hidden type="button" class="button" id="showPoemButton" data-toggle="modal"
-                data-target="#rt-poem-modal">Show me the
-                poem!</button>
             <button hidden type="button" class="button" id="showList" data-toggle="modal"
-                data-target="#poet-list-modal">Show me the list!</button>
+                data-target="#poet-list-modal">List please!</button>
+            <button hidden type="button" class="button" id="showPoemButton" data-toggle="modal"
+                data-target="#rt-poem-modal">Poem please!</button>
+
             <button hidden class="button" id="okButton" type="button" onclick="speaking()">...</button>
         </div>
     </div>

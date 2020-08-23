@@ -81,6 +81,13 @@ h1 {
     line-height: 1.8rem;
   }
 
+  .title-box {
+      padding: 2px
+  }
+  .title-box p {
+      line-height: .5rem;
+      margin-block-end: .3rem;
+  }
 .modal-content {
       background: rgb(255, 250, 229);
       box-sizing: border-box;
@@ -107,9 +114,9 @@ h1 {
   }
 
   .button {
-      background-color:#0AB5CD;
+      background-color:#003153;
       color: white;
-      margin-left: 4px;
+      margin-left: 15px;
       margin-right: 2px;
       font-family: inherit;
       font-weight: bold;
@@ -119,10 +126,10 @@ h1 {
       font-size: 1.2rem;
       transition: 0.2s all;
       position: relative;
-      margin: 16px auto;
+      margin: 16px 6px;
   }
 
-  .button .poet-select {
+  .button .poetNameButton {
       background-color: #003153;
   }
 

@@ -68,6 +68,13 @@ var wordsRTA = `Next up is Rachel Tanner!`
 var words2RTA = `"Rachel Tanner (she/her) is an Alabamian writer whose work has recently appeared in Tiny Molecules, Impossible Task, Tenderness Lit, and elsewhere. She tweets @rickit."`
 var words3RTA = `Rachel has included a content warning for domestic violence on this poem. If you would like, you may skip to our next poem.`
 
+//Brendon Bigley
+var wordsBB = `Oh worm, here we go: Brendon Bigley!`
+var words2BB = `"Brendon Bigley (He / Him) is a person who never logged off. When he’s not working at Marvel,
+he’s making podcasts or ambient music. He wonders if it’s legal to marry an Animal Crossing
+New Leaf cartridge. Might be weird. Who knows?"`
+var words3BB = `Hey Brendon, that would be weird!`
+
 //Adrian Belmes
 var wordsAB = `Ok, time for Adrian Belmes!`
 var words2AB = `"Adrian Belmes is a Jewish Ukrainian poet residing currently in San Diego. He is a senior editor for Fiction International, editor in chief of Badlung Press, and vice president of State Zine Collective. He has been previously published in SOFT CARTEL, Philosophical Idiot, and elsewhere. You can find him at adrianbelmes.com or @adrian_belmes."`
@@ -133,7 +140,9 @@ var words3WH = `Oh worm, Philly! You think they make cheesesteaks with crickets 
 
 //Rachel Small
 var wordsRS = `Our next poet is Rachel Small! I didn't mean for it to rhyme with Will Hall!`
-var words2RS = `"Rachel Small is a poet who is working on her bio :)"`
+var words2RS = `"Rachel Small (she/her) writes outside of Ottawa. Her work has appeared or is forthcoming in
+magazines, including Thorn Literary Magazine, blood orange, The Shore, The Daily Drunk,
+Anti-Heroin Chic Magazine, and other places. You can find her on twitter @rahel_taller."`
 var words3RS = `Seriously, I didn't mean for it to rhyme.`
 
 //Iona Murphy
@@ -143,6 +152,48 @@ Sylvia Plath. She describes her writing as 'straddling the fine line between poe
 oversharing.' She has writing published with Black Bough, Teen Belle, and Brave Voices. 
 You can keep up with her on Twitter: @write_with_Iona and Instagram: ionasmurfy"`
 var words3IM = `. . . is "oh worm" getting old?`
+
+//Mike Francentese
+var wordsMF = `Brooklyn's own Mike Fracentese is up next!`
+var words2MF = `"Mike Fracentese (he/him) is a poet from & in Brooklyn who runs the Flight Recorder Reading Series out of a black box theater in Manhattan. All of his Animal Crossing town names have ended in -vale."`
+var words3MF = `THERE Brooklyn at!`
+
+//Kara Goughnour
+var wordsKG = `Nearing the end here, folks! Here's Kara Goughnour!`
+var words2KG = `"Kara Goughnour (she/they) is a writer living in Pittsburgh, Pennsylvania. They are the author of "Mixed Tapes," a part of the Ghost City Press Summer 2019 Micro-Chap Series, and have work published or forthcoming in over fifty journals. Follow them on Twitter and Instagram @kara_goughnour or read their collected and exclusive works at karagoughnour.com."`
+var words3KG = `My ban from Pittsburgh actually lifted recently!`
+
+//Toby Buckley
+var wordsTB = `Double-trouble from Toby Buckley!`
+var words2TB = `"Toby Buckley is a poet and editor for Bombinate Zine."`
+var words3TB = `Also, decided I'm gonna stick to 'oh worm!,' because, hey, eff the haters, am I right?`
+
+//Jenna Jaco
+var wordsJJ = `Triple-uh-trible from Jenna Jaco!`
+var words2JJ = `"Jenna is a technical writer from Texas. She hopes to like fishing and landscaping in real life someday."`
+var words3JJ = `Triple trouple? Trouple trouble? Hm.`
+
+//miss macross
+var wordsMM = `The Penultimate Poet: Miss Macross!`
+var words2MM = `"miss macross (she/her) is a Pittsburgh-based writer who enjoys watching mecha and taking naps. Her first chapbook, MISS MACROSS VS. BATMAN, was published by Dark Particle/CWP Collective Press in 2018. Find her on Twitter @missmacross."`
+var words3MM = `Oh worm, I wonder who won?`
+
+//Casey Morris
+var wordsCMo = `It's the fiiinal poooet: Casey Morris!`
+var words2CMo = `"Casey Morris (she/her) is a playwright and marketing manager who works throughout the Hudson
+Valley. Her work has been performed at Dusklit Interactive Arts Festival and
+CelebrateWomxn845’s annual gallery showcases."`
+var words3CMo = `Thank you for sticking with me here! Take us home, Casey!`
+
+//done1
+var wordsDone = `Wow! I did it, I hosted a reading without revealing my dark secret!`
+var words2Done = `U H H H H H H`
+var words3Done = `Anyway, Dan wanted to thank all the poets who made this possible and decided to share their poems with the world, and also a few other friends who made this possible.`
+
+//done2
+var words4Done = `A big thanks goes out to Rose Guilfoyle, my precious owner, for drawing me as well as years of collabing with Dan on Pretty Cool Poetry Thing. Literally could not have happened without you! And I'd like to thank you for crickets!`
+var words5Done = `Another big thanks to Lydia Dake and Allison Froio for recording the sick background music you've been vibing to. Keep it fresh, oh worm.`
+var words6Done = `There's a few other thanks and credits to go around on the About page. Thank you for joining us for one last hoorah! Go get yourself a milkshake, oh worm.`
 
 setTimeout(open, 1)
 //cold open
@@ -272,22 +323,22 @@ function speakingFinished2() {
     typewriter3
         .typeString(words6)
         .start();
-    setRT()
-}
-
-//Rachelle Toarmino
-function setRT() {
-    okButton.setAttribute("onclick", "speakingRT()");
+    okButton.setAttribute("onclick", "setRT()");
     okButton.innerHTML = "Oh worm! Let's go!";
     okButton.removeAttribute("hidden")
     showPoetList.removeAttribute("hidden")
 }
-function speakingRT() {
+
+//Rachelle Toarmino
+function setRT() {
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
     showPoetList.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    speakingRT()
+}
+function speakingRT() {
     var typewriter = new Typewriter(app, {
         loop: false,
         delay: lengthGuess(wordsRT),
@@ -331,6 +382,7 @@ function speakingFinishedRT() {
 function setWL() {
     showPoemButton.setAttribute("data-target", "#wl-poem-modal");
     showPoemButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -374,12 +426,14 @@ function speakingFinishedWL() {
         .typeString(words3WL)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 // Harrison Wade
 function setHW() {
     showPoemButton.setAttribute("data-target", "#hw-poem-modal");
     showPoemButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -423,12 +477,14 @@ function speakingFinishedHW() {
         .typeString(words3HW)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 // Brian Windschitl
 function setBW() {
     showPoemButton.setAttribute("data-target", "#bw-poem-modal");
     showPoemButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -472,12 +528,14 @@ function speakingFinishedBW() {
         .typeString(words3BW)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 // Amanda Silberling
 function setAS() {
     showPoemButton.setAttribute("data-target", "#as-poem-modal");
     showPoemButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -499,7 +557,7 @@ function speakingAS() {
 function speakingContinuedAS() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2AS) - 7,
+        delay: lengthGuess(words2AS) - 5,
         cursor: ""
     });
     speakingNoise(words2AS);
@@ -507,7 +565,7 @@ function speakingContinuedAS() {
     typewriter2
         .typeString(words2AS)
         .start();
-    setTimeout(speakingFinishedAS, 22000)
+    setTimeout(speakingFinishedAS, 16000)
 }
 function speakingFinishedAS() {
     var typewriter3 = new Typewriter(app3, {
@@ -521,12 +579,14 @@ function speakingFinishedAS() {
         .typeString(words3AS)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 // Rachel Tanner
 function setRTA() {
     showPoemButton.setAttribute("data-target", "#rta-poem-modal");
     showPoemButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -570,16 +630,69 @@ function speakingFinishedRTA() {
         .typeString(words3RTA)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
     okButton.removeAttribute("hidden")
-    okButton.setAttribute("onclick", "setAB()");
+    okButton.setAttribute("onclick", "setBB()");
     okButton.innerHTML = "Skip";
+}
+
+//Brendon Bigley
+function setBB() {
+    showPoemButton.setAttribute("data-target", "#bb-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingBB()
+}
+function speakingBB() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsBB),
+        cursor: ""
+    });
+    speakingNoise(wordsBB);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsBB)
+        .start();
+    setTimeout(speakingContinuedBB, 4000)
+}
+function speakingContinuedBB() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2BB) - 4,
+        cursor: ""
+    });
+    speakingNoise(words2BB);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2BB)
+        .start();
+    setTimeout(speakingFinishedBB, 12000)
+}
+function speakingFinishedBB() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3BB),
+        cursor: ""
+    });
+    speakingNoise(words3BB);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3BB)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Adrian Belmes
 function setAB() {
     showPoemButton.setAttribute("data-target", "#ab-poem-modal");
     showPoemButton.setAttribute("hidden", true)
-    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -623,6 +736,7 @@ function speakingFinishedAB() {
         .typeString(words3AB)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Ale Rosales
@@ -630,6 +744,7 @@ function setAR() {
     showPoemButton.setAttribute("data-target", "#ar-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -673,6 +788,7 @@ function speakingFinishedAR() {
         .typeString(words3AR)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Josefine Stargardt
@@ -680,6 +796,7 @@ function setJS() {
     showPoemButton.setAttribute("data-target", "#js-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -723,6 +840,7 @@ function speakingFinishedJS() {
         .typeString(words3JS)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Sarah Robbins
@@ -730,6 +848,7 @@ function setSR() {
     showPoemButton.setAttribute("data-target", "#sr-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -773,6 +892,7 @@ function speakingFinishedSR() {
         .typeString(words3SR)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Josh Smith
@@ -780,6 +900,7 @@ function setJS2() {
     showPoemButton.setAttribute("data-target", "#js2-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -823,6 +944,7 @@ function speakingFinishedJS2() {
         .typeString(words3JS2)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Imogen Smiley
@@ -830,6 +952,7 @@ function setIS() {
     showPoemButton.setAttribute("data-target", "#is-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -873,6 +996,7 @@ function speakingFinishedIS() {
         .typeString(words3IS)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Rae White
@@ -880,6 +1004,7 @@ function setRW() {
     showPoemButton.setAttribute("data-target", "#rw-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -923,6 +1048,7 @@ function speakingFinishedRW() {
         .typeString(words3RW)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Jeff Schiff
@@ -930,6 +1056,7 @@ function setJS3() {
     showPoemButton.setAttribute("data-target", "#js3-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -973,6 +1100,7 @@ function speakingFinishedJS3() {
         .typeString(words3JS3)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Noah Falck
@@ -980,6 +1108,7 @@ function setNF() {
     showPoemButton.setAttribute("data-target", "#nf-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -1023,6 +1152,7 @@ function speakingFinishedNF() {
         .typeString(words3NF)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Will Hall
@@ -1030,6 +1160,7 @@ function setWH() {
     showPoemButton.setAttribute("data-target", "#wh-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -1073,6 +1204,7 @@ function speakingFinishedWH() {
         .typeString(words3WH)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Rachel Small
@@ -1080,6 +1212,7 @@ function setRS() {
     showPoemButton.setAttribute("data-target", "#rs-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -1123,6 +1256,7 @@ function speakingFinishedRS() {
         .typeString(words3RS)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
 }
 
 //Iona Murphy
@@ -1130,6 +1264,7 @@ function setIM() {
     showPoemButton.setAttribute("data-target", "#im-poem-modal");
     showPoemButton.setAttribute("hidden", true)
     okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
     app.innerHTML = ""
     app2.innerHTML = ""
     app3.innerHTML = ""
@@ -1173,6 +1308,409 @@ function speakingFinishedIM() {
         .typeString(words3IM)
         .start();
     document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//Mike Fracentese
+function setMF() {
+    showPoemButton.setAttribute("data-target", "#mf-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingMF()
+}
+function speakingMF() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsMF),
+        cursor: ""
+    });
+    speakingNoise(wordsMF);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsMF)
+        .start();
+    setTimeout(speakingContinuedMF, 4000)
+}
+function speakingContinuedMF() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2MF) - 3,
+        cursor: ""
+    });
+    speakingNoise(words2MF);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2MF)
+        .start();
+    setTimeout(speakingFinishedMF, 11000)
+}
+function speakingFinishedMF() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3MF),
+        cursor: ""
+    });
+    speakingNoise(words3MF);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3MF)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//Kara Goughnour
+function setKG() {
+    showPoemButton.setAttribute("data-target", "#kg-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingKG()
+}
+function speakingKG() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsKG),
+        cursor: ""
+    });
+    speakingNoise(wordsKG);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsKG)
+        .start();
+    setTimeout(speakingContinuedKG, 4000)
+}
+function speakingContinuedKG() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2KG) - 3,
+        cursor: ""
+    });
+    speakingNoise(words2KG);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2KG)
+        .start();
+    setTimeout(speakingFinishedKG, 11000)
+}
+function speakingFinishedKG() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3KG),
+        cursor: ""
+    });
+    speakingNoise(words3KG);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3KG)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//Toby Buckley
+function setTB() {
+    showPoemButton.setAttribute("data-target", "#tb-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingTB()
+}
+function speakingTB() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsTB),
+        cursor: ""
+    });
+    speakingNoise(wordsTB);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsTB)
+        .start();
+    setTimeout(speakingContinuedTB, 4000)
+}
+function speakingContinuedTB() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2TB),
+        cursor: ""
+    });
+    speakingNoise(words2TB);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2TB)
+        .start();
+    setTimeout(speakingFinishedTB, 6000)
+}
+function speakingFinishedTB() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3TB),
+        cursor: ""
+    });
+    speakingNoise(words3TB);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3TB)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//Jenna Jaco
+function setJJ() {
+    showPoemButton.setAttribute("data-target", "#jj-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingJJ()
+}
+function speakingJJ() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsJJ),
+        cursor: ""
+    });
+    speakingNoise(wordsJJ);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsJJ)
+        .start();
+    setTimeout(speakingContinuedJJ, 4000)
+}
+function speakingContinuedJJ() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2JJ),
+        cursor: ""
+    });
+    speakingNoise(words2JJ);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2JJ)
+        .start();
+    setTimeout(speakingFinishedJJ, 6000)
+}
+function speakingFinishedJJ() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3JJ),
+        cursor: ""
+    });
+    speakingNoise(words3JJ);
+    bart.src = "./bart/huh.png"
+    typewriter3
+        .typeString(words3JJ)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//miss macross
+function setMM() {
+    showPoemButton.setAttribute("data-target", "#mm-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingMM()
+}
+function speakingMM() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsMM),
+        cursor: ""
+    });
+    speakingNoise(wordsMM);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsMM)
+        .start();
+    setTimeout(speakingContinuedMM, 4000)
+}
+function speakingContinuedMM() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2MM),
+        cursor: ""
+    });
+    speakingNoise(words2MM);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2MM)
+        .start();
+    setTimeout(speakingFinishedMM, 6000)
+}
+function speakingFinishedMM() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3MM),
+        cursor: ""
+    });
+    speakingNoise(words3MM);
+    bart.src = "./bart/huh.png"
+    typewriter3
+        .typeString(words3MM)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//Casey Morris
+function setCMo() {
+    showPoemButton.setAttribute("data-target", "#cmo-poem-modal");
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    speakingCMo()
+}
+function speakingCMo() {
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsCMo),
+        cursor: ""
+    });
+    speakingNoise(wordsCMo);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(wordsCMo)
+        .start();
+    setTimeout(speakingContinuedCMo, 4000)
+}
+function speakingContinuedCMo() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words2CMo),
+        cursor: ""
+    });
+    speakingNoise(words2CMo);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words2CMo)
+        .start();
+    setTimeout(speakingFinishedCMo, 6000)
+}
+function speakingFinishedCMo() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3CMo),
+        cursor: ""
+    });
+    speakingNoise(words3CMo);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words3CMo)
+        .start();
+    document.getElementById("showPoemButton").removeAttribute("hidden")
+    showPoetList.removeAttribute("hidden")
+}
+
+//bye bye
+function speakingDone() {
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    showPoemButton.setAttribute("hidden", true)
+    okButton.setAttribute("hidden", true)
+    showPoetList.setAttribute("hidden", true)
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(wordsDone),
+        cursor: ""
+    });
+    speakingNoise(wordsDone);
+    typewriter
+        .typeString(wordsDone)
+        .start();
+    setTimeout(speakingContinuedDone, 5000)
+}
+function speakingContinuedDone() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: 100,
+        cursor: ""
+    });
+    speakingNoise(words2Done);
+    bart.src = "./bart/huh.png"
+    typewriter2
+        .typeString(words2Done)
+        .start();
+    setTimeout(speakingFinishedDone, 1500)
+}
+function speakingFinishedDone() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words3Done),
+        cursor: ""
+    });
+    speakingNoise(words3Done);
+    bart.src = "./bart/neutral.png"
+    typewriter3
+        .typeString(words3Done)
+        .start();
+    okButton.setAttribute("onclick", "speaking2Done()");
+    okButton.innerHTML = "Let's hear about those friends!";
+    okButton.removeAttribute("hidden")
+}
+function speaking2Done() {
+    app.innerHTML = ""
+    app2.innerHTML = ""
+    app3.innerHTML = ""
+    okButton.setAttribute("hidden", true)
+    var typewriter = new Typewriter(app, {
+        loop: false,
+        delay: lengthGuess(words4Done),
+        cursor: ""
+    });
+    speakingNoise(words4Done);
+    bart.src = "./bart/happy.png"
+    typewriter
+        .typeString(words4Done)
+        .start();
+    setTimeout(speakingContinued2Done, 9000)
+}
+function speakingContinued2Done() {
+    var typewriter2 = new Typewriter(app2, {
+        loop: false,
+        delay: lengthGuess(words5Done),
+        cursor: ""
+    });
+    speakingNoise(words5Done);
+    bart.src = "./bart/neutral.png"
+    typewriter2
+        .typeString(words5Done)
+        .start();
+    setTimeout(speakingFinished2Done, 8000)
+}
+function speakingFinished2Done() {
+    var typewriter3 = new Typewriter(app3, {
+        loop: false,
+        delay: lengthGuess(words6Done),
+        cursor: ""
+    });
+    speakingNoise(words6Done);
+    bart.src = "./bart/happy.png"
+    typewriter3
+        .typeString(words6Done)
+        .start();
 }
 
 //function to guess the length of the sentence's audio to sync up the typewriter
