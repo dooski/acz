@@ -188,6 +188,9 @@ h1 {
         max-width: 500px;
         padding: 8px 15px
       }
+      .title-box p {
+          font-size: 10px;
+      }
     .modal-content {
           max-width: 500px;
       }    
