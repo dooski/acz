@@ -56,9 +56,7 @@ var words3BW = `I tried making kimchi once, but realized I just wanted crickets 
 //Amanda Silberling
 var wordsAS = `Still thinking about crickets... anyway, here's our next poet! Amanda Silberling!`
 var words2AS = `"Amanda Silberling is a poet, journalist, and multimedia artist whose work has 
-appeared in NPR, Hyperallergic, The Rumpus, Kotaku, and other places. She was a 2019-2020 Princeton in 
-Asia Fellow in Laos at the Luang Prabang Film Festival, and she is currently the Van Doren Fellow at 
-the University of Pennsylvania's Center for Programs in Contemporary Writing. Her favorite 
+appeared in NPR, Hyperallergic, The Rumpus, Kotaku, and other places. Her favorite 
 villager is Cherry (don't tell June), and she enjoys wishing on shooting stars with Celeste. 
 Find her at amandasilberling.com, on twitter at @asilbwrites, or in the park playing Pokémon Go."`
 var words3AS = `Pokemon Go to the Polls.`
@@ -155,7 +153,10 @@ var words3IM = `. . . is "oh worm" getting old?`
 
 //Mike Francentese
 var wordsMF = `Brooklyn's own Mike Fracentese is up next!`
-var words2MF = `"Mike Fracentese (he/him) is a poet from & in Brooklyn who runs the Flight Recorder Reading Series out of a black box theater in Manhattan. All of his Animal Crossing town names have ended in -vale."`
+var words2MF = `"Mike Fracentese (he/him) is a poet from & in Brooklyn who runs the Flight Recorder Reading
+Series out of The Tank, a theater in Manhattan. During quarantine, he’s moved the reading
+series online and started publishing Distance Yearning, a weekly zine. He shares his Animal
+Crossing island with three roommates."`
 var words3MF = `THERE Brooklyn at!`
 
 //Kara Goughnour
@@ -165,7 +166,10 @@ var words3KG = `My ban from Pittsburgh actually lifted recently!`
 
 //Toby Buckley
 var wordsTB = `Double-trouble from Toby Buckley!`
-var words2TB = `"Toby Buckley is a poet and editor for Bombinate Zine."`
+var words2TB = `"Toby Buckley is an archivist-in-training and zine-maker with an MA in Creative Writing
+(Poetry) from the Seamus Heaney Centre at Queen’s University Belfast. His work has appeared
+in a number of literary publications, including Poetry Ireland Review, The Stinging Fly and
+Footnote. His interests include bugs, trains and medieval things."`
 var words3TB = `Also, decided I'm gonna stick to 'oh worm!,' because, hey, eff the haters, am I right?`
 
 //Jenna Jaco
@@ -1653,7 +1657,7 @@ function speakingContinuedDone() {
     typewriter2
         .typeString(words2Done)
         .start();
-    setTimeout(speakingFinishedDone, 1500)
+    setTimeout(speakingFinishedDone, 3000)
 }
 function speakingFinishedDone() {
     var typewriter3 = new Typewriter(app3, {
