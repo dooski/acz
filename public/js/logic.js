@@ -112,7 +112,7 @@ var words3IS = `I always neglect the rules of style by being naked.`
 //Rae White
 var wordsRW = `Up next we have Rae White!`
 var words2RW = `"Rae White is a non-binary transgender poet, writer and zinester. Their poetry collection Milk Teeth (UQP) won the 2017 Thomas Shapcott Poetry Prize and was shortlisted for the 2019 Victorian Premier’s Literary Award for Poetry. Rae’s short story 'The Body Remembers' won Second Prize in the 2019 Rachel Funari Prize for Fiction."`
-var words3RW = `This poem was originally published at Subbed In: Ibes House and in Rae's poetry collection Milk Teeth, oh worm.`
+var words3RW = `This poem was originally published at Subbed In: Ibis House and in Rae's poetry collection Milk Teeth, oh worm.`
 
 //Jeff Schiff
 var wordsJS3 = `Our next two poets wrote poems more about animals crossing than Animal Crossing, but still counts! First up: Jeff Schiff!`
@@ -408,7 +408,7 @@ function speakingWL() {
 function speakingContinuedWL() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2WL) - 7,
+        delay: lengthGuess(words2WL) - 8,
         cursor: ""
     });
     speakingNoise(words2WL);
@@ -416,7 +416,7 @@ function speakingContinuedWL() {
     typewriter2
         .typeString(words2WL)
         .start();
-    setTimeout(speakingFinishedWL, 13000)
+    setTimeout(speakingFinishedWL, 12000)
 }
 function speakingFinishedWL() {
     var typewriter3 = new Typewriter(app3, {
@@ -472,7 +472,7 @@ function speakingContinuedHW() {
 function speakingFinishedHW() {
     var typewriter3 = new Typewriter(app3, {
         loop: false,
-        delay: lengthGuess(words3HW),
+        delay: lengthGuess(words3HW) - 3,
         cursor: ""
     });
     speakingNoise(words3HW);
@@ -523,7 +523,7 @@ function speakingContinuedBW() {
 function speakingFinishedBW() {
     var typewriter3 = new Typewriter(app3, {
         loop: false,
-        delay: lengthGuess(words3BW) - 4,
+        delay: lengthGuess(words3BW) - 6,
         cursor: ""
     });
     speakingNoise(words3BW);
@@ -548,7 +548,7 @@ function setAS() {
 function speakingAS() {
     var typewriter = new Typewriter(app, {
         loop: false,
-        delay: lengthGuess(wordsAS),
+        delay: lengthGuess(wordsAS) - 2,
         cursor: ""
     });
     speakingNoise(wordsAS);
@@ -561,7 +561,7 @@ function speakingAS() {
 function speakingContinuedAS() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2AS) - 5,
+        delay: lengthGuess(words2AS) - 7,
         cursor: ""
     });
     speakingNoise(words2AS);
@@ -569,7 +569,7 @@ function speakingContinuedAS() {
     typewriter2
         .typeString(words2AS)
         .start();
-    setTimeout(speakingFinishedAS, 16000)
+    setTimeout(speakingFinishedAS, 14000)
 }
 function speakingFinishedAS() {
     var typewriter3 = new Typewriter(app3, {
@@ -612,7 +612,7 @@ function speakingRTA() {
 function speakingContinuedRTA() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2RTA) - 3,
+        delay: lengthGuess(words2RTA) - 5,
         cursor: ""
     });
     speakingNoise(words2RTA);
@@ -667,7 +667,7 @@ function speakingBB() {
 function speakingContinuedBB() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2BB) - 4,
+        delay: lengthGuess(words2BB) - 6,
         cursor: ""
     });
     speakingNoise(words2BB);
@@ -675,7 +675,7 @@ function speakingContinuedBB() {
     typewriter2
         .typeString(words2BB)
         .start();
-    setTimeout(speakingFinishedBB, 12000)
+    setTimeout(speakingFinishedBB, 10000)
 }
 function speakingFinishedBB() {
     var typewriter3 = new Typewriter(app3, {
@@ -718,7 +718,7 @@ function speakingAB() {
 function speakingContinuedAB() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2AB) - 4,
+        delay: lengthGuess(words2AB) - 6,
         cursor: ""
     });
     speakingNoise(words2AB);
@@ -770,7 +770,7 @@ function speakingAR() {
 function speakingContinuedAR() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2AR) - 4,
+        delay: lengthGuess(words2AR) - 6,
         cursor: ""
     });
     speakingNoise(words2AR);
@@ -809,7 +809,7 @@ function setJS() {
 function speakingJS() {
     var typewriter = new Typewriter(app, {
         loop: false,
-        delay: lengthGuess(wordsJS),
+        delay: lengthGuess(wordsJS) - 1,
         cursor: ""
     });
     speakingNoise(wordsJS);
@@ -822,7 +822,7 @@ function speakingJS() {
 function speakingContinuedJS() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2JS) - 4,
+        delay: lengthGuess(words2JS) - 6,
         cursor: ""
     });
     speakingNoise(words2JS);
@@ -926,7 +926,7 @@ function speakingJS2() {
 function speakingContinuedJS2() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2JS2) - 4,
+        delay: lengthGuess(words2JS2) - 6,
         cursor: ""
     });
     speakingNoise(words2JS2);
@@ -934,7 +934,7 @@ function speakingContinuedJS2() {
     typewriter2
         .typeString(words2JS2)
         .start();
-    setTimeout(speakingFinishedJS2, 9000)
+    setTimeout(speakingFinishedJS2, 8000)
 }
 function speakingFinishedJS2() {
     var typewriter3 = new Typewriter(app3, {
@@ -1030,7 +1030,7 @@ function speakingRW() {
 function speakingContinuedRW() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2RW) - 4,
+        delay: lengthGuess(words2RW) - 6,
         cursor: ""
     });
     speakingNoise(words2RW);
@@ -1082,7 +1082,7 @@ function speakingJS3() {
 function speakingContinuedJS3() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2JS3) - 6,
+        delay: lengthGuess(words2JS3) - 5,
         cursor: ""
     });
     speakingNoise(words2JS3);
@@ -1090,7 +1090,7 @@ function speakingContinuedJS3() {
     typewriter2
         .typeString(words2JS3)
         .start();
-    setTimeout(speakingFinishedJS3, 14000)
+    setTimeout(speakingFinishedJS3, 13000)
 }
 function speakingFinishedJS3() {
     var typewriter3 = new Typewriter(app3, {
@@ -1186,7 +1186,7 @@ function speakingWH() {
 function speakingContinuedWH() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2WH) - 4,
+        delay: lengthGuess(words2WH) - 6,
         cursor: ""
     });
     speakingNoise(words2WH);
@@ -1194,7 +1194,7 @@ function speakingContinuedWH() {
     typewriter2
         .typeString(words2WH)
         .start();
-    setTimeout(speakingFinishedWH, 8000)
+    setTimeout(speakingFinishedWH, 10000)
 }
 function speakingFinishedWH() {
     var typewriter3 = new Typewriter(app3, {
@@ -1233,7 +1233,7 @@ function speakingRS() {
     typewriter
         .typeString(wordsRS)
         .start();
-    setTimeout(speakingContinuedRS, 6000)
+    setTimeout(speakingContinuedRS, 5000)
 }
 function speakingContinuedRS() {
     var typewriter2 = new Typewriter(app2, {
@@ -1246,7 +1246,7 @@ function speakingContinuedRS() {
     typewriter2
         .typeString(words2RS)
         .start();
-    setTimeout(speakingFinishedRS, 7000)
+    setTimeout(speakingFinishedRS, 8000)
 }
 function speakingFinishedRS() {
     var typewriter3 = new Typewriter(app3, {
@@ -1290,7 +1290,7 @@ function speakingIM() {
 function speakingContinuedIM() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2IM) - 3,
+        delay: lengthGuess(words2IM) - 6,
         cursor: ""
     });
     speakingNoise(words2IM);
@@ -1298,7 +1298,7 @@ function speakingContinuedIM() {
     typewriter2
         .typeString(words2IM)
         .start();
-    setTimeout(speakingFinishedIM, 11000)
+    setTimeout(speakingFinishedIM, 13000)
 }
 function speakingFinishedIM() {
     var typewriter3 = new Typewriter(app3, {
@@ -1342,7 +1342,7 @@ function speakingMF() {
 function speakingContinuedMF() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2MF) - 3,
+        delay: lengthGuess(words2MF) - 6,
         cursor: ""
     });
     speakingNoise(words2MF);
@@ -1350,7 +1350,7 @@ function speakingContinuedMF() {
     typewriter2
         .typeString(words2MF)
         .start();
-    setTimeout(speakingFinishedMF, 11000)
+    setTimeout(speakingFinishedMF, 13000)
 }
 function speakingFinishedMF() {
     var typewriter3 = new Typewriter(app3, {
@@ -1394,7 +1394,7 @@ function speakingKG() {
 function speakingContinuedKG() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2KG) - 3,
+        delay: lengthGuess(words2KG) - 6,
         cursor: ""
     });
     speakingNoise(words2KG);
@@ -1402,7 +1402,7 @@ function speakingContinuedKG() {
     typewriter2
         .typeString(words2KG)
         .start();
-    setTimeout(speakingFinishedKG, 11000)
+    setTimeout(speakingFinishedKG, 13000)
 }
 function speakingFinishedKG() {
     var typewriter3 = new Typewriter(app3, {
@@ -1446,7 +1446,7 @@ function speakingTB() {
 function speakingContinuedTB() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2TB),
+        delay: lengthGuess(words2TB) - 5,
         cursor: ""
     });
     speakingNoise(words2TB);
@@ -1454,7 +1454,7 @@ function speakingContinuedTB() {
     typewriter2
         .typeString(words2TB)
         .start();
-    setTimeout(speakingFinishedTB, 6000)
+    setTimeout(speakingFinishedTB, 13000)
 }
 function speakingFinishedTB() {
     var typewriter3 = new Typewriter(app3, {
@@ -1550,7 +1550,7 @@ function speakingMM() {
 function speakingContinuedMM() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2MM),
+        delay: lengthGuess(words2MM) - 6,
         cursor: ""
     });
     speakingNoise(words2MM);
@@ -1558,7 +1558,7 @@ function speakingContinuedMM() {
     typewriter2
         .typeString(words2MM)
         .start();
-    setTimeout(speakingFinishedMM, 6000)
+    setTimeout(speakingFinishedMM, 9000)
 }
 function speakingFinishedMM() {
     var typewriter3 = new Typewriter(app3, {
@@ -1602,7 +1602,7 @@ function speakingCMo() {
 function speakingContinuedCMo() {
     var typewriter2 = new Typewriter(app2, {
         loop: false,
-        delay: lengthGuess(words2CMo),
+        delay: lengthGuess(words2CMo) - 3,
         cursor: ""
     });
     speakingNoise(words2CMo);
@@ -1610,7 +1610,7 @@ function speakingContinuedCMo() {
     typewriter2
         .typeString(words2CMo)
         .start();
-    setTimeout(speakingFinishedCMo, 6000)
+    setTimeout(speakingFinishedCMo, 9000)
 }
 function speakingFinishedCMo() {
     var typewriter3 = new Typewriter(app3, {
@@ -1644,7 +1644,7 @@ function speakingDone() {
     typewriter
         .typeString(wordsDone)
         .start();
-    setTimeout(speakingContinuedDone, 5000)
+    setTimeout(speakingContinuedDone, 4000)
 }
 function speakingContinuedDone() {
     var typewriter2 = new Typewriter(app2, {
@@ -1657,7 +1657,7 @@ function speakingContinuedDone() {
     typewriter2
         .typeString(words2Done)
         .start();
-    setTimeout(speakingFinishedDone, 3000)
+    setTimeout(speakingFinishedDone, 2500)
 }
 function speakingFinishedDone() {
     var typewriter3 = new Typewriter(app3, {
@@ -1681,7 +1681,7 @@ function speaking2Done() {
     okButton.setAttribute("hidden", true)
     var typewriter = new Typewriter(app, {
         loop: false,
-        delay: lengthGuess(words4Done),
+        delay: lengthGuess(words4Done) - 4,
         cursor: ""
     });
     speakingNoise(words4Done);

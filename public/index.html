@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+    <meta name="description" content="An Animal Crossing poetry collection zine read by Bart the Chameleon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/turnip.css"> -->
     <link rel="stylesheet" href="css/style.css">
-
-    <title>ACZ</title>
+    <title>Animal Crossing Zine</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -64,124 +66,91 @@
 <body>
     <!-- list of poets -->
     <div class="modal fade" tabindex="-1" id="poet-list-modal">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <!-- POEM TITLE by poet -->
-                    <h2 class="modal-title">Choose a poet to check out!</h2>
+                    <h2 class="modal-title">Which poet?</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6">
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setRT()">
-                                    Rachelle Toarmino
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setWL()">
-                                    Will LaPorte
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setHW()">
-                                    Harrison Wade
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setBW()">
-                                    Brian Windschitl
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setAS()">
-                                    Amanda Silberling
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setRTA()">
-                                    Rachel Tanner
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setBB()">
-                                    Brendon Bigley
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setAB()">
-                                    Adrian Belmes
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setAR()">
-                                    Ale Rosales
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setJS()">
-                                    Josefine Stargardt
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setSR()">
-                                    Sarah Robbins
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setJS2()">
-                                    Josh Smith
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setIS()">
-                                    Imogen Smiley
-                                </button>
-                            </div>
-                            <div class="col-6">
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setRW()">
-                                    Rae White
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setJS3()">
-                                    Jeff Schiff
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setNF()">
-                                    Noah Falck
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setWH()">
-                                    Will Hall
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setRS()">
-                                    Rachel Small
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setIM()">
-                                    Iona Murphy
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setMF()">
-                                    Mike Fracentese
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setKG()">
-                                    Kara Goughnour
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setTB()">
-                                    Toby Buckley
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setJJ()">
-                                    Jenna Jaco
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setMM()">
-                                    Miss Macross
-                                </button>
-                                <button type="button" class="button" id="poetNameButton" data-dismiss="modal"
-                                    onclick="setCMo()">
-                                    Casey Morris
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-body mx-auto">
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setRT()">
+                        Rachelle Toarmino
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setWL()">
+                        Will LaPorte
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setHW()">
+                        Harrison Wade
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setBW()">
+                        Brian Windschitl
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setAS()">
+                        Amanda Silberling
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setRTA()">
+                        Rachel Tanner
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setBB()">
+                        Brendon Bigley
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setAB()">
+                        Adrian Belmes
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setAR()">
+                        Ale Rosales
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setJS()">
+                        Josefine Stargardt
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setSR()">
+                        Sarah Robbins
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setJS2()">
+                        Josh Smith
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setIS()">
+                        Imogen Smiley
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setRW()">
+                        Rae White
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setJS3()">
+                        Jeff Schiff
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setNF()">
+                        Noah Falck
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setWH()">
+                        Will Hall
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setRS()">
+                        Rachel Small
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setIM()">
+                        Iona Murphy
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setMF()">
+                        Mike Fracentese
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setKG()">
+                        Kara Goughnour
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setTB()">
+                        Toby Buckley
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setJJ()">
+                        Jenna Jaco
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setMM()">
+                        Miss Macross
+                    </button>
+                    <button type="button" class="button" id="poetNameButton" data-dismiss="modal" onclick="setCMo()">
+                        Casey Morris
+                    </button>
                 </div>
             </div>
         </div>
@@ -999,7 +968,7 @@
                         stew with fruit beetles and ground butterfly <br>
                         wings to taste.<br><br>
 
-                        You tell me: last night I heard the intimacy of a <br>
+                        You tell me: Last night I heard the intimacy of a <br>
                         mouth, its slick and swallow, just outside<br>
                         the walls. I tell you the village has already <br>
                         fallen. Yet, I’m unsettled.<br><br>
@@ -1028,7 +997,7 @@
                         <hr>
                     <p><b>NOTE:</b><i>Originally published at Subbed In: Ibis House and in Rae's poetry collection
                             Milk
-                            Teeth</i>></p>
+                            Teeth</i></p>
                     </p>
                     <!-- END OF POEM -->
                     <br>
@@ -1744,6 +1713,9 @@
             <p><i>Pretty Cool Poetry Thing's</i></p>
         </h2>
         <h1>ANIMAL CROSSING ZINE</h1>
+        <row class="option-group">
+            <a class="button" type="button" href="/about">About</a>
+        </row>
     </div>
     <div class="dialog-box" id="one-box">
         <h2 class="dialog-box__name" id="name">???</h2>

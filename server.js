@@ -13,12 +13,11 @@ app.use(express.static("public"));
 
 //html routes
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
-
-// app.get("/about", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/about.html"))
-// });
+app.get("/about", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/about.html"));
+});
 
 app.listen(PORT, function () {
     console.log("Server is listening on PORT: " + PORT);
